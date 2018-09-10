@@ -1,0 +1,73 @@
+.header{
+    padding-top: 3rem;
+    @media (min-width: 768px){
+        padding: 4rem 2rem 0rem 4rem;
+    }
+}
+.navigation{
+    @media (min-width: 768px){
+        @include flex-settings(row, space-between);
+    }
+}
+.logo{
+    display: block;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    @media (min-width: 768px){
+        margin: 0;
+    }
+}
+.menu{
+    @include flex-settings(row, space-around);
+    @media (min-width: 768px){
+        flex-basis: 60%;
+    }
+
+}
+.menu__item{
+    flex-basis: 32%;
+    @media (min-width:768px){
+        
+    }
+}
+.menu__link{
+    display: block;
+    text-align: center;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    color: white;
+    font-family: $secondary-font-family;
+    font-weight: 500;
+    border: 2px solid transparent;
+    transition: border ease-in-out 1s;
+    &:hover{
+        border: 2px solid white;
+    }
+}
+.promo{
+    text-align: center;
+    padding: 6rem 0;
+    @media (min-width:768px){
+        padding: 9rem 0;
+    }
+}
+.promo__title{
+    text-transform: uppercase;
+    font-family: $secondary-font-family;
+    color:white;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.promo__text{
+    font-family: $secondary-font-family;
+    color:white;
+}

@@ -1,0 +1,13 @@
+.wrapper{
+    @include flex-settings(row, center);
+}
+.wrapper--img{
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/headline.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.wrapper--blue{
+    background-color: $primary-color;
+}
