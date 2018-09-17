@@ -6,7 +6,9 @@
     background-size: cover;
     background-image: url('../img/headline.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    @media(min-width: 1110px){
+        background-attachment: fixed;
+    }
 }
 .wrapper--blue{
     background-color: $primary-color;
